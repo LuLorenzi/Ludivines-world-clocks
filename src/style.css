@@ -23,6 +23,42 @@ main {
   box-shadow: rgba(28, 28, 28, 0.5) 0px 3px 8px;
 }
 
+select {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  color: #987284;
+  background-color: #ecebe4;
+  border-radius: 10px;
+  border: none;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
+  padding: 15px 0;
+}
+
+.data:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.8;
+}
+
 footer {
   font-size: 12px;
   text-align: center;
