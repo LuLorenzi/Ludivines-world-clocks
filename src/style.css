@@ -12,6 +12,12 @@ h1 {
   margin: 15px;
 }
 
+.home-page {
+  color: #1c1c1c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 main {
   text-align: center;
   background-color: #1c1c1c;
@@ -45,8 +51,8 @@ h2 {
 }
 
 .clock {
-border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
-  padding: 15px 0
+  border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
+  padding: 15px 0;
 }
 
 .data {
@@ -64,11 +70,11 @@ footer {
   color: #1c1c1c;
 }
 
-a {
+.footer {
   text-decoration: none;
   color: #987284;
 }
 
-a:hover {
+.footer:hover {
   text-decoration: underline;
 }
