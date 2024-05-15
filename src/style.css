@@ -5,15 +5,14 @@ body {
 }
 
 h1 {
-  color: #1c1c1c;
   text-align: center;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 15px;
 }
 
 .home-page {
-  color: #1c1c1c;
+  color: #1C3738;
   text-decoration: none;
   cursor: pointer;
 }
@@ -34,7 +33,7 @@ select {
   width: 80%;
   margin: 0 auto;
   padding: 10px;
-  color: #987284;
+  color: #6D8B8E;
   background-color: #ecebe4;
   border-radius: 10px;
   border: none;
@@ -48,10 +47,11 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 28px;
+  color: #ecebe4;
 }
 
 .clock {
-  border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
+  border-bottom: 1px dashed #6D8B8E;
   padding-bottom: 25px;
 }
 
@@ -63,6 +63,7 @@ h2 {
 
 .date {
   opacity: 0.6;
+  font-weight: 400;
 }
 
 .time {
@@ -77,7 +78,7 @@ footer {
 
 .footer {
   text-decoration: none;
-  color: #987284;
+  color: #6D8B8E;
 }
 
 .footer:hover {
