@@ -44,15 +44,14 @@ h2 {
   font-size: 28px;
 }
 
+.clock {
+border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
+  padding: 15px 0
+}
+
 .data {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
-  padding: 15px 0;
-}
-
-.data:last-child {
-  border: none;
 }
 
 .date {
