@@ -45,23 +45,28 @@ select:hover {
 }
 
 h2 {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 28px;
 }
 
 .clock {
   border-bottom: 1px dashed rgba(236, 235, 228, 0.5);
-  padding: 15px 0;
+  padding-bottom: 25px;
 }
 
 .data {
   display: flex;
   justify-content: space-around;
+  font-size: 20px;
 }
 
 .date {
-  opacity: 0.8;
+  opacity: 0.6;
+}
+
+.time {
+    font-weight: 500;
 }
 
 footer {

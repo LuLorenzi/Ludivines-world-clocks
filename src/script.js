@@ -5,10 +5,8 @@ function updateTime() {
     let londonTime = londonElement.querySelector(".time");
     let londonDate = londonElement.querySelector(".date");
 
-    londonDate.innerHTML = moment()
-      .tz("Europe/London")
-      .format("ddd Do MMMM YYYY");
-    londonTime.innerHTML = moment().tz("Europe/London").format("HH:mm:ss");
+    londonDate.innerHTML = moment().tz("Europe/London").format("ddd Do MMMM");
+    londonTime.innerHTML = moment().tz("Europe/London").format("HH:mm:ss A");
   }
 
   //Washington
@@ -17,8 +15,8 @@ function updateTime() {
     let washingtonTime = washingtonElement.querySelector(".time");
     let washingtonDate = washingtonElement.querySelector(".date");
 
-    washingtonDate.innerHTML = moment().tz("EST").format("ddd Do MMMM YYYY");
-    washingtonTime.innerHTML = moment().tz("EST").format("HH:mm:ss");
+    washingtonDate.innerHTML = moment().tz("EST").format("ddd Do MMMM");
+    washingtonTime.innerHTML = moment().tz("EST").format("HH:mm:ss A");
   }
 
   //Singapore
@@ -29,8 +27,8 @@ function updateTime() {
 
     singaporeDate.innerHTML = moment()
       .tz("Asia/Singapore")
-      .format("ddd Do MMMM YYYY");
-    singaporeTime.innerHTML = moment().tz("Asia/Singapore").format("HH:mm:ss");
+      .format("ddd Do MMMM");
+    singaporeTime.innerHTML = moment().tz("Asia/Singapore").format("HH:mm:ss A");
   }
 }
 
@@ -43,14 +41,15 @@ function updateCity(event) {
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimezone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `        
-  <div class="clock" id="london">
+  citiesElement.innerHTML = `  
     <h2>${cityName}</h2>
           <div class="data">
-            <div class="date">${cityTime.format("ddd Do MMMM YYYY")}</div>
-            <div class="time">${cityTime.format("HH:mm:ss")}</div>
+            <div class="date">${cityTime.format("ddd Do MMMM")}</div>
+            <div class="time">${cityTime.format("HH:mm A")}</div>
           </div>
         </div>`;
+
+        setInterval(cityTime, 1000)
 }
 
 updateTime;
